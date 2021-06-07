@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body class="font-sans justify-center bg-white dark:bg-gray-800">
+    <div class="container justify-center p-5 md:px-52 mx-auto">
+      <div class="">
+        <h1
+          class="
+            md:text-5xl
+            text-4xl
+            py-5
+            text-center text-green-600
+            font-semibold
+          "
+        >
+          Todo List App
+        </h1>
+      </div>
+      <!-- <form class="search-bar mb-10" id="search">
+        <label>Search Todo :</label>
+        <input
+          type="text"
+          class="w-full p-3 mt-3 bg-green-50 outline-none"
+          id="search-bar"
+        />
+      </form> -->
+      <div>
+        <form id="form">
+          <label class="dark:text-white">Add new todo : </label>
+          <input
+            type="text"
+            class="
+              w-full
+              p-3
+              mt-3
+              outline-none
+              border-b-2 border-green-600
+              bg-transparent
+              hover:bg-transparent
+            "
+            id="add-new-todo"
+            required
+          />
+          <button
+            class="
+              w-full
+              bg-green-600
+              h-12
+              text-white
+              font-medium
+              mt-5
+              transform
+              hover:scale-95
+              transition-all
+              focus:outline-none
+            "
+            type="submit"
+          >
+            Add Todo
+          </button>
+        </form>
+      </div>
+      <div class="todos py-5" id="todos">
+        <label class="mb-5 dark:text-white">Todo list :</label>
+        <!-- <ul class="list-todos flex items-stretch justify-between py-2">
+          <li class="">List pertama</li>
+          <button class="outline-none flex">
+            <img
+              src="src/images/trash.png"
+              alt=""
+              class="w-6 self-center transform hover:scale-95"
+            />
+          </button>
+        </ul> -->
+      </div>
+      <div class="chance-mode">
+        <button
+          class="
+            w-full
+            bg-green-600
+            h-12
+            text-white
+            font-medium
+            mt-5
+            transform
+            md:hover:scale-95
+            md:transition-all
+            focus:outline-none
+          "
+          onclick="chanceMode()"
+        >
+          Tap Tap to <span>Chance Mode</span>
+        </button>
+      </div>
+      <div class="footer mt-10">
+        <div class="github flex justify-center">
+          <p class="dark:text-white">See project on :</p>
+          <a href="#" class="flex text-green-600">
+            <img
+              src="src/images/github.png"
+              alt=""
+              class="
+                w-5
+                h-5
+                mr-1
+                ml-2
+                text-green-600
+                rounded-full
+                dark:bg-white
+              "
+            />
+            Github
+          </a>
+        </div>
+        <div class="github flex justify-center pt-2">
+          <a
+            href="https://github.com/kingkinfajarr"
+            class="flex dark:text-white"
+            target="_blank"
+          >
+            Created at 2021&nbsp; &copy;
+            <span class="text-green-600">Kingkin Fajar</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="js/dom.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
